@@ -62,7 +62,7 @@ angular.module('companyPortfolio.controllers', ['ui.bootstrap'])
             tradeService.disconnect();
         };
 
-        tradeService.connect("/spring-websocket-portfolio/watchlist")
+        tradeService.connect("/CompanyRankingMonitor/watchlist")
             .then(function (username) {                    
                     return tradeService.loadPositions();
                 },
